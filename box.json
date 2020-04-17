@@ -1,0 +1,36 @@
+{
+    "name":"cbsecurity_demo",
+    "version":"1.0.0",
+    "author":"You",
+    "location":"",
+    "slug":"cbsecuritydemo",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^3.0.0",
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*",
+        "commandbox-cfformat":"*"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/",
+        "testbox":"testbox/",
+        "cbsecurity":"modules/cbsecurity/"
+    },
+    "dependencies":{
+        "coldbox":"^5.0.0",
+        "cbsecurity":"^2.5.0+94"
+    },
+    "scripts":{}
+}
