@@ -137,7 +137,7 @@ component{
 				// Activate handler/action based annotation security
 				"handlerAnnotationSecurity"		: true,
 				// Activate security rule visualizer, defaults to false by default
-				"enableSecurityVisualizer"		: false,
+				"enableSecurityVisualizer"		: true,
 				// JWT Settings
 				//"jwt"                     		: {
 					// The issuer authority for the tokens, placed in the `iss` claim
