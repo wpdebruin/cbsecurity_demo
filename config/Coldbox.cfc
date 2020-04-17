@@ -169,7 +169,7 @@ component{
 				///			"cacheName" : "default"
 				//		}
 				//	}
-				}
+				//}
 			}
 		};
 

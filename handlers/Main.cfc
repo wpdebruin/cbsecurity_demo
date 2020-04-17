@@ -40,5 +40,11 @@ component extends="coldbox.system.EventHandler"{
 		var exception = prc.exception;
 		//Place exception handler below:
 	}
-
+	function onInvalidAuthentication(event,rc,prc){
+		return "onInvalidAuthentication page";
+	}
+	function onInvalidAuthorization(event,rc,prc){
+		return "onInvalidAuthorization page";
+	}
+	
 }

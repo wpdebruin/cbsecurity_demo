@@ -33,6 +33,4 @@ component accessors="true"{
 	function retrieveUserById( required id ){
 		return wirebox.getInstance("User");
 	}
-
-
 }
