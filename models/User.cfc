@@ -4,36 +4,32 @@
 component accessors="true"{
 	
 	// Properties
-	
+	property name = "id" type="string";
+	property name="username" type="string";
+	//doesn't matter if you call this roles or permissions, it is just a list  (or array) of string values
+	property name = "permissions" type="string";
+	property name = "LoggedIn" type="boolean" default=false;
 
 	/**
 	 * Constructor
 	 */
 	User function init(){
-		
 		return this;
 	}
 	
-	/**
-	* getId
-	*/
-	function getId(){
-		return "someId";
-	}
 
 	/**
 	* hasPermission
 	*/
-	function hasPermission(){
-		return true;
+	function hasPermission( permission ){
+		return listFindNoCase(variables.permissions, arguments.permission)
 	}
 
 	/**
 	* isLoggedIn
 	*/
 	function isLoggedIn(){
-		return true;
+		return variables.LoggedIn;
 	}
-
 
 }

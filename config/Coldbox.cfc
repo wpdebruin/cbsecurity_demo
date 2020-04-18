@@ -71,14 +71,18 @@ component{
 		logBox = {
 			// Define Appenders
 			appenders = {
-				coldboxTracer = { class="coldbox.system.logging.appenders.ConsoleAppender" }
+				myAsycFile = {
+					class="coldbox.system.logging.appenders.RollingFileAppender",
+					properties={
+						filePath=expandPath("logs"),autoExpand=false
+					}
+				} 
 			},
 			// Root Logger
-			root = { levelmax="INFO", appenders="*" },
+			root = { levelmax="DEBUG", appenders="*" },
 			// Implicit Level Categories
 			info = [ "coldbox.system" ]
 		};
-
 		//Layout Settings
 		layoutSettings = {
 			defaultLayout = "",
@@ -96,10 +100,13 @@ component{
 
 		// module setting overrides
 		moduleSettings = {
+			cbAuth: {
+				userServiceClass: "UserService"
+			},
 			// CB Security
 			cbSecurity : {
 				// The global invalid authentication event or URI or URL to go if an invalid authentication occurs
-				"invalidAuthenticationEvent"	: "main.onInvalidAuthentication",
+				"invalidAuthenticationEvent"	: "auth.index",
 				// Default Auhtentication Action: override or redirect when a user has not logged in
 				//"defaultAuthenticationAction"	: "redirect",
 				// The global invalid authorization event or URI or URL to go if an invalid authorization occurs

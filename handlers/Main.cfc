@@ -1,5 +1,7 @@
 component extends="coldbox.system.EventHandler"{
 
+	//property name="cbAuth" inject="authenticationService@cbauth";
+
 	// Default Action
 	function index(event,rc,prc){
 		prc.welcomeMessage = "Welcome to ColdBox!";
@@ -44,7 +46,7 @@ component extends="coldbox.system.EventHandler"{
 		return "onInvalidAuthentication page";
 	}
 	function onInvalidAuthorization(event,rc,prc){
-		return "onInvalidAuthorization page";
+		return "You are Logged in, but you don't have permissions to acces this page" ;
 	}
 	
 }

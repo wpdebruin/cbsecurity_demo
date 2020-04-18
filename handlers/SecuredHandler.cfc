@@ -1,7 +1,7 @@
 /**
 * I am a new handler
 */
-component secured{
+component {
 	
 	// OPTIONAL HANDLER PROPERTIES
 	this.prehandler_only 	= "";
@@ -34,14 +34,14 @@ component secured{
 	/**
 	* index
 	*/
-	function index( event, rc, prc ){
+	function index( event, rc, prc ) secured="admin" {
 		event.setView( "SecuredHandler/index" );
 	}
 
 	/**
 	* doSomething
 	*/
-	function doSomething( event, rc, prc ){
+	function doSomething( event, rc, prc ) secured="user" {
 		event.setView( "SecuredHandler/doSomething" );
 	}
 

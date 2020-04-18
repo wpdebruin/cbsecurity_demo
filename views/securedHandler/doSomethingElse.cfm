@@ -1,3 +1,3 @@
 <cfoutput>
-<h1>SecuredHandler.doSomethingElse</h1>
+<h1>Acces for everyone</h1>
 </cfoutput>

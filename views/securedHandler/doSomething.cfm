@@ -1,3 +1,3 @@
 <cfoutput>
-<h1>SecuredHandler.doSomething</h1>
+<h1>Access for admin and users</h1>
 </cfoutput>

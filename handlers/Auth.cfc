@@ -32,9 +32,17 @@ component{
 	*/
 		
 	/**
+	 * index
+	 */
+	function index( event, rc, prc ){
+		event.setView("Auth/index");
+	}
+
+	/**
 	* login
 	*/
 	function login( event, rc, prc ){
+		auth().authenticate(rc.username,rc.password);
 		event.setView( "Auth/login" );
 	}
 
@@ -42,6 +50,7 @@ component{
 	* logout
 	*/
 	function logout( event, rc, prc ){
+		auth().logout();
 		event.setView( "Auth/logout" );
 	}
 

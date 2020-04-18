@@ -1,3 +1,3 @@
 <cfoutput>
-<h1>SecuredHandler.index</h1>
+<h1>Access for admin only</h1>
 </cfoutput>
